@@ -11,7 +11,7 @@ const countdownElement = document.getElementById('countdown');
 const gifts = {
     1: "L'ascenseur du succès est en panne. Tu vas devoir prendre les escaliers... une marche à la fois ! 💪",
     2: "Le café et toi, vous avez un point commun : vous êtes incroyables le matin ! ☕",
-    3: "Mon lit est une machine à voyager dans le temps. Je m'allonge et boom, c'est déjà le lendemain ! 🛏️⏰",
+    3: "Qui gobe une noix de coco fait confiance à son anus.",
     4: "La vie est courte. Souris tant que tu as encore des dents. 😁",
     5: "Pense comme un proton. Toujours positif ! ⚡",
     6: "Je ne suis pas paresseux, je suis en mode économie d'énergie. 🔋",
@@ -22,16 +22,16 @@ const gifts = {
     11: "Fais en sorte qu'aujourd'hui soit tellement génial qu'hier soit jaloux. ✨",
     12: "La vie a donné des citrons à quelqu'un. Et maintenant on nous vend de la limonade trop chère. 🍋",
     13: "Rêve grand, mais n'oublie pas ton réveil. ⏰",
-    14: "A MODIFIER",
+    14: "Je suis pas chiante, je suis... comment dire... une expérience immersive. 😇",
     15: "La boxe m'a appris une chose : parfois il faut esquiver les problèmes... ou les mettre K.O. 🥊💥",
     16: "Mon profil criminel selon Spencer Reid : 'Obsédée par le Nutella, potentiellement dangereuse si affamée.' 🍫🔍",
-    17: "A MODIFIER",
-    18: "A MODIFIER",
-    19: "A MODIFIER",
-    20: "A MODIFIER",
-    21: "A MODIFIER",
+    17: "Je boxe pour évacuer mon stress. Ou pour être sexy en sueur. Les deux marchent. 🥊💦",
+    18: "Profil criminel : suspecte numéro 1 dans la disparition mystérieuse du pot de Nutella de tous les WEI AMMA. 🍫🕵️",
+    19: "On a beau dissimuler ses excréments au fond de l'eau, ils remontent toujours a la surface.",
+    20: "Si le crocodile a un pantalon, c'est qu'il a enfin trouvé ou ranger sa queue.",
+    21: "Les calories du Nutella ne comptent pas si personne ne te voit le manger. C'est scientifique. 🍫🔬",
     22: "Ne prends pas la vie trop au sérieux, tu n'en sortiras pas vivant de toute façon. - Elbert Hubbard ",
-    23: "A MODIFIER",
+    23: "Quelle est la fée qui aime le plus boire de l'Hépar ? La fécale.",
     24: "Bravo, tu as survécu à décembre ! Maintenant, prépare-toi pour janvier... 🎉😅"
 };
 
