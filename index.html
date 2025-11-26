@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mathias' Advent Calendar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="page-container">
+        <!-- Signature en haut à gauche --> 
+        <div class="signature">@nqemie</div>
+        
+        <!-- Enveloppe décoration en haut à droite - CLIQUABLE -->
+        <img src="images/envelope-decoration.png" alt="Envelope" class="envelope-decoration" id="envelopeBtn">
+
+        <!-- Titre principal -->
+        <h1 class="main-title">Mathias'<br>Advent<br>Calendar</h1>
+        
+        <!-- Sous-titre -->
+        <p class="subtitle">Ouvre une case pour chaque jour de décembre</p>
+        
+        <!-- iPad mockup container -->
+        <div class="ipad-container">
+            <!-- iPad frame (mockup image) -->
+            <img src="images/ipad-mockup.png" alt="iPad" class="ipad-frame">
+            
+            <!-- Écran scrollable à l'intérieur de l'iPad -->
+            <div class="ipad-screen">
+                <!-- Status bar iOS -->
+                <img src="images/status-bar.png" alt="Status Bar" class="status-bar">
+                
+                <!-- Zone scrollable avec les étoiles -->
+                <div class="stars-container">
+                    <!-- Les 24 étoiles en grille 3 colonnes -->
+                    <div class="star" data-day="1">
+                        <img src="images/star-1.png" alt="Jour 1">
+                    </div>
+                    <div class="star" data-day="2">
+                        <img src="images/star-2.png" alt="Jour 2">
+                    </div>
+                    <div class="star" data-day="3">
+                        <img src="images/star-3.png" alt="Jour 3">
+                    </div>
+                    <div class="star" data-day="4">
+                        <img src="images/star-4.png" alt="Jour 4">
+                    </div>
+                    <div class="star" data-day="5">
+                        <img src="images/star-5.png" alt="Jour 5">
+                    </div>
+                    <div class="star" data-day="6">
+                        <img src="images/star-6.png" alt="Jour 6">
+                    </div>
+                    <div class="star" data-day="7">
+                        <img src="images/star-7.png" alt="Jour 7">
+                    </div>
+                    <div class="star" data-day="8">
+                        <img src="images/star-8.png" alt="Jour 8">
+                    </div>
+                    <div class="star" data-day="9">
+                        <img src="images/star-9.png" alt="Jour 9">
+                    </div>
+                    <div class="star" data-day="10">
+                        <img src="images/star-10.png" alt="Jour 10">
+                    </div>
+                    <div class="star" data-day="11">
+                        <img src="images/star-11.png" alt="Jour 11">
+                    </div>
+                    <div class="star" data-day="12">
+                        <img src="images/star-12.png" alt="Jour 12">
+                    </div>
+                    <div class="star" data-day="13">
+                        <img src="images/star-13.png" alt="Jour 13">
+                    </div>
+                    <div class="star" data-day="14">
+                        <img src="images/star-14.png" alt="Jour 14">
+                    </div>
+                    <div class="star" data-day="15">
+                        <img src="images/star-15.png" alt="Jour 15">
+                    </div>
+                    <div class="star" data-day="16">
+                        <img src="images/star-16.png" alt="Jour 16">
+                    </div>
+                    <div class="star" data-day="17">
+                        <img src="images/star-17.png" alt="Jour 17">
+                    </div>
+                    <div class="star" data-day="18">
+                        <img src="images/star-18.png" alt="Jour 18">
+                    </div>
+                    <div class="star" data-day="19">
+                        <img src="images/star-19.png" alt="Jour 19">
+                    </div>
+                    <div class="star" data-day="20">
+                        <img src="images/star-20.png" alt="Jour 20">
+                    </div>
+                    <div class="star" data-day="21">
+                        <img src="images/star-21.png" alt="Jour 21">
+                    </div>
+                    <div class="star" data-day="22">
+                        <img src="images/star-23.png" alt="Jour 22">
+                    </div>
+                    <div class="star" data-day="23">
+                        <img src="images/star-22.png" alt="Jour 23">
+                    </div>
+                    <div class="star" data-day="24">
+                        <img src="images/star-24.png" alt="Jour 24">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Footer signature -->
+        <div class="footer-signature">made with love by @nqemie</div>
+    </div>
+    
+    <!-- Popup pour afficher le cadeau -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup-content">
+            <button class="close-popup" id="closePopup">&times;</button>
+            <div class="popup-gift">
+                <!-- L'image du cadeau sera insérée ici dynamiquement -->
+                <p class="popup-placeholder">Ton cadeau du jour <span id="dayNumber"></span> ! 🎁</p>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Popup message secret - AJOUTE ÇA -->
+    <div class="message-overlay" id="messagePopup">
+        <div class="message-content">
+            <button class="close-message" id="closeMessage">&times;</button>
+            <div class="paper-note">
+                <p class="note-text">Coucou Monsieur Caca,<br>Je voulais absolument te faire un calendrier de l'avent, mais bon cette année c'est compliqué.<br>J'espère que ça te plaira quand même... </p>
+            </div>
+        </div>
+    </div>
+
+        <!-- Popup verrouillage -->
+    <div class="locked-overlay" id="lockedPopup">
+        <div class="locked-content">
+            <h2 class="locked-title">Hop Hop Hop...</h2>
+            <p class="locked-text">Tu pourras ouvrir cette case dans<br><span id="countdown"></span></p>
+            <button class="locked-button" id="closeLocked">OK</button>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
+
