@@ -7,33 +7,34 @@ const lockedPopup = document.getElementById('lockedPopup');
 const closeLocked = document.getElementById('closeLocked');
 const countdownElement = document.getElementById('countdown');
 
-// Textes des cadeaux
+// Quotes pour Dodo - Version complète
 const gifts = {
-    1: "Pleins de bêtises pour manger à Metz",
-    2: "Bon pour une soirée coquillettes",
-    3: "Massage de 30 minutes par moi",
-    4: "Bon pour une soirée \"IT takes Two\"",
-    5: "Soirée chocolat chaud, Pop Corn et film de ton choix",
-    6: "Bon pour un petit déjeuner au lit",
-    7: "Encore des bêtises pour dans le train",
-    8: "Un livre sur les randonnées",
-    9: "Un appareil photo jetable comme ça tu peux prendre autant de photos que tu veux",
-    10: "Une petite broderie",
-    11: "Bon pour une journée où je ne touche pas à mon téléphone",
-    12: "Bon pour une soirée où tu m'apprends à jouer à LoL",
-    13: "Carte cadeau Steam 10-20€",
-    14: "Livre de rando pour être un vrai randonneur",
-    15: "Soirée Pépé Chicken Tenders",
-    16: "Une autre soirée chocolat chaud, films & pop corn",
-    17: "Bon pour une rando surprise",
-    18: "Brunch maison pancake, bacon, etc",
-    19: "Minecraft date night",
-    20: "Massage tout nu",
-    21: "Un aller retour en train Paris-Metz",
-    22: "Soirée/Après-midi gaming",
-    23: "Un beau bouquet pour une belle princesse",
-    24: "Une super gourde et d'autres cadeaux à découvrir plus tard"
+    1: "L'ascenseur du succès est en panne. Tu vas devoir prendre les escaliers... une marche à la fois ! 💪",
+    2: "Le café et toi, vous avez un point commun : vous êtes incroyables le matin ! ☕",
+    3: "Mon lit est une machine à voyager dans le temps. Je m'allonge et boom, c'est déjà le lendemain ! 🛏️⏰",
+    4: "La vie est courte. Souris tant que tu as encore des dents. 😁",
+    5: "Pense comme un proton. Toujours positif ! ⚡",
+    6: "Je ne suis pas paresseux, je suis en mode économie d'énergie. 🔋",
+    7: "Rien n'est impossible... sauf monter le lit de Dodo. 🛏️",
+    8: "Le stress, c'est quand tu ouvres ton placard et que tu ne trouves pas le nutella. 🤔",
+    9: "Je suis multi-tâches : je peux perdre mes clés tout en regardant mes clés. 🔑",
+    10: "Si le plan A ne marche pas, l'alphabet a 25 autres lettres. 🔤",
+    11: "Fais en sorte qu'aujourd'hui soit tellement génial qu'hier soit jaloux. ✨",
+    12: "La vie a donné des citrons à quelqu'un. Et maintenant on nous vend de la limonade trop chère. 🍋",
+    13: "Rêve grand, mais n'oublie pas ton réveil. ⏰",
+    14: "A MODIFIER",
+    15: "La boxe m'a appris une chose : parfois il faut esquiver les problèmes... ou les mettre K.O. 🥊💥",
+    16: "Mon profil criminel selon Spencer Reid : 'Obsédée par le Nutella, potentiellement dangereuse si affamée.' 🍫🔍",
+    17: "A MODIFIER",
+    18: "A MODIFIER",
+    19: "A MODIFIER",
+    20: "A MODIFIER",
+    21: "A MODIFIER",
+    22: "Ne prends pas la vie trop au sérieux, tu n'en sortiras pas vivant de toute façon. - Elbert Hubbard ",
+    23: "A MODIFIER",
+    24: "Bravo, tu as survécu à décembre ! Maintenant, prépare-toi pour janvier... 🎉😅"
 };
+
 
 // Fonction pour vérifier si une case peut être ouverte
 function canOpenDay(day) {
