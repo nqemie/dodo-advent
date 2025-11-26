@@ -43,13 +43,13 @@ function canOpenDay(day) {
     const currentMonth = now.getMonth(); // 0 = janvier, 11 = décembre
     
     // Si on est en décembre
-    if (currentMonth === 11) {
-        const unlockDate = new Date(currentYear, 11, day, 0, 0, 0); // Minuit du jour J
+    if (currentMonth === 10) {
+        const unlockDate = new Date(currentYear, 10, day, 0, 0, 0); // Minuit du jour J
         return now >= unlockDate;
     }
     
     // Si on est après décembre (janvier ou plus), tout est déverrouillé
-    if (currentMonth > 11 || (currentMonth === 0 && now.getFullYear() > currentYear)) {
+    if (currentMonth > 10 || (currentMonth === 0 && now.getFullYear() > currentYear)) {
         return true;
     }
     
