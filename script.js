@@ -32,7 +32,7 @@ const gifts = {
     21: "Les calories du Nutella ne comptent pas si personne ne te voit le manger. C'est scientifique. 🍫🔬",
     22: "Ne prends pas la vie trop au sérieux, tu n'en sortiras pas vivant de toute façon. - Elbert Hubbard ",
     23: "Quelle est la fée qui aime le plus boire de l'Hépar ? La fécale.",
-    24: "Bravo, tu as survécu à décembre ! Maintenant, prépare-toi pour janvier... 🎉😅"
+    24: "Bravo, tu as survécu à décembre ! Maintenant, prépare-toi pour janvier... Et surtout, Joyeuses Pacques ! 🎉"
 };
 
 
@@ -43,13 +43,13 @@ function canOpenDay(day) {
     const currentMonth = now.getMonth(); // 0 = janvier, 11 = décembre
     
     // Si on est en décembre
-    if (currentMonth === 10) {
-        const unlockDate = new Date(currentYear, 10, day, 0, 0, 0); // Minuit du jour J
+    if (currentMonth === 11) {
+        const unlockDate = new Date(currentYear, 11, day, 0, 0, 0); // Minuit du jour J
         return now >= unlockDate;
     }
     
     // Si on est après décembre (janvier ou plus), tout est déverrouillé
-    if (currentMonth > 10 || (currentMonth === 0 && now.getFullYear() > currentYear)) {
+    if (currentMonth > 11 || (currentMonth === 0 && now.getFullYear() > currentYear)) {
         return true;
     }
     
